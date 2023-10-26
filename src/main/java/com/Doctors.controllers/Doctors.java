@@ -22,9 +22,7 @@ public class Doctors {
     @GetMapping("/new_doctor/create")
     public String createDoctor (@RequestParam String firstName,
                                 @RequestParam String lastName) {
-        System.out.printf ("")
-    }
-    {
-        return "doctors/doctors";
+        System.out.printf ("First Name: %s; Last Name: %s \n", firstName, lastName);
+        return "redirect:/doctors";
     }
 }
